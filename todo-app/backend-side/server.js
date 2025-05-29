@@ -9,8 +9,9 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://dulcet-lollipop-8e7ca0.netlify.app'
-}));
+  origin: "https://dulcet-lollipop-8e7ca0.netlify.app/", // replace with actual URL
+  credentials: true
+}))
 app.use(express.json());
 
 app.use("/api/users", authRoutes);
