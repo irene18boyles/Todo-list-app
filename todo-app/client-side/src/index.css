@@ -1,0 +1,45 @@
+/* @import "tailwindcss";
+
+.form-input {
+  @apply w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.form-button-login {
+  @apply w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors;
+}
+
+.form-button-register {
+  @apply w-full bg-green-500 text-white p-2 rounded hover:bg-green-600 transition-colors;
+}
+
+.error-text {
+  @apply text-red-500 text-sm;
+}
+
+.auth-container {
+  @apply min-h-screen flex flex-col justify-center items-center bg-gray-100;
+}
+
+.auth-box {
+  @apply bg-white p-6 rounded shadow-md w-full max-w-sm;
+}
+
+.auth-header {
+  @apply text-2xl font-bold mb-4 text-center;
+}
+
+.toggle-button {
+  @apply text-blue-600 ml-1 hover:underline cursor-pointer;
+}
+
+.app-container {
+  @apply max-w-xl mx-auto mt-10;
+}
+
+.app-header {
+  @apply text-2xl font-bold mb-4 flex justify-between items-center;
+}
+
+.signout-button {
+  @apply text-red-600 text-sm hover:underline cursor-pointer;
+} */

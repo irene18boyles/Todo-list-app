@@ -1,0 +1,50 @@
+.form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f8faff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  border: 1.8px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #764ba2;
+  outline: none;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.4);
+}
+
+.button-blue {
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button-blue:hover {
+  background-color: #6a84f8;
+}
