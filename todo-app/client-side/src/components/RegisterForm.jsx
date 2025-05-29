@@ -11,7 +11,7 @@ export default function RegisterForm({ onAuthSuccess }) {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:8000/api/users/register", {
+      const response = await fetch("https://todo-list-app-kpsh.onrender.com/api/users/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password }),

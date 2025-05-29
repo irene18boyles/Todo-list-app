@@ -22,7 +22,7 @@ function App() {
 
   const fetchTodos = async (authToken) => {
     try {
-      const res = await axios.get("http://localhost:8000/api/todos", {
+      const res = await axios.get("https://todo-list-app-kpsh.onrender.com/api/todos", {
         headers: { Authorization: `Bearer ${authToken}` },
       });
       setTodos(res.data);
@@ -54,7 +54,7 @@ function App() {
 
   const handleAddTodo = async (newTodo) => {
     try {
-      const res = await axios.post("http://localhost:8000/api/todos", newTodo);
+      const res = await axios.post("https://todo-list-app-kpsh.onrender.com/api/todos", newTodo);
       setTodos([...todos, res.data]);
       setShowForm(false);
     } catch (err) {
@@ -66,7 +66,7 @@ function App() {
     try {
       const { title, task, priority, status } = updatedTodo;
       const res = await axios.put(
-        `http://localhost:8000/api/todos/${id}`,
+        `https://todo-list-app-kpsh.onrender.com/api/todos/${id}`,
         { title, task, priority, status }
       );
 
@@ -78,7 +78,7 @@ function App() {
 
   const handleDeleteTodo = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/api/todos/${id}`);
+      await axios.delete(`https://todo-list-app-kpsh.onrender.com/api/todos/${id}`);
       setTodos(todos.filter((todo) => todo._id !== id));
     } catch (err) {
       console.error("Failed to delete todo:", err);
