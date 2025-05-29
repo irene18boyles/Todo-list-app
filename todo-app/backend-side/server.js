@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://dulcet-lollipop-8e7ca0.netlify.app/'
+  origin: 'https://dulcet-lollipop-8e7ca0.netlify.app'
 }));
 app.use(express.json());
 
